@@ -1,15 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from "./components/Welcome";
 
 function App() {
-    const name = '이강민';
-    const today = new Date().toLocaleDateString();
-    const desc = 'React를 시작하는 개발자';
   return (
     <div>
-      <h1>{name}의 React</h1>
-        <p>오늘 날짜 : {today}</p>
-        <p>{desc}</p>
+        <h1>React 컴포넌트</h1>
+        <Welcome name="강민"/>
+        <Welcome name="테스트"/>
     </div>
   );
 }
